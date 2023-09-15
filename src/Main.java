@@ -10,9 +10,11 @@ public class Main {
         System.out.println("Your diameter is " + getDiameter(radius) +
                 ". Your area is " + getArea(radius) +
                 ". Your circumference is " + getCircumference(radius));
+        //you always call the method with the thing that you sent and are taking back.
     }
 
     public static double getDiameter (Double radius) {
+        //radius is the variable you're passing in from above so that's why it's in the parentheses.
         double diameterAnswer = radius*2;
         return diameterAnswer;
     }
@@ -20,6 +22,7 @@ public class Main {
     public static double getCircumference (Double radius) {
         double circumferenceAnswer = 2 * Math.PI * radius;
         return circumferenceAnswer;
+        //no void so you can return something
     }
 
     public static double getArea (Double radius) {
